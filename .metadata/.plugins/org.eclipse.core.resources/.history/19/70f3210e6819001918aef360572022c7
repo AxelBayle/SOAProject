@@ -1,0 +1,7 @@
+package bdd;
+
+public class batimentRessource {
+
+	
+	@Path()
+}
