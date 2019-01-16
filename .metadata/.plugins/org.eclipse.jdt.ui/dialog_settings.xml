@@ -46,6 +46,9 @@
 		<item value="709" key="DIALOG_X_ORIGIN"/>
 		<item value="130" key="DIALOG_Y_ORIGIN"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="7" key="index"/>
+	</section>
 	<section name="BuildPathsPropertyPage">
 		<item value="2" key="pageIndex"/>
 	</section>
