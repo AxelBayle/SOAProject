@@ -18,7 +18,8 @@ public class batiment {
 	private batiment() {
 		Map<Integer, Salle> new_map= new HashMap<Integer, Salle>(); 
 		map_salle=new_map;
-		lastID=0;			
+		lastID=0;		
+		Etat_alarme=0;
 	}
 	public static final batiment getInstance() {
 		return instance;

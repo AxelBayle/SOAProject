@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="2">
-    <list key="modules" value0="bdd::org.eclipse.jst.jee.server:bdd::jst.web::3.0" value1="ProjectAppWeb::org.eclipse.jst.jee.server:ProjectAppWeb::jst.web::3.0"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="10">
+    <list key="modules" value0="bdd::org.eclipse.jst.jee.server:bdd::jst.web::3.0" value1="AlarmeWS::org.eclipse.jst.jee.server:AlarmeWS::jst.web::2.5" value2="PorteWS::org.eclipse.jst.jee.server:PorteWS::jst.web::2.5" value3="FenetresWS::org.eclipse.jst.jee.server:FenetresWS::jst.web::2.5" value4="LumieresWS::org.eclipse.jst.jee.server:LumieresWS::jst.web::2.5" value5="AccesWS::org.eclipse.jst.jee.server:AccesWS::jst.web::2.5" value6="ChauffageWS::org.eclipse.jst.jee.server:ChauffageWS::jst.web::2.5" value7="ProjectAppWeb::org.eclipse.jst.jee.server:ProjectAppWeb::jst.web::2.5"/>
   </server>
 </servers>

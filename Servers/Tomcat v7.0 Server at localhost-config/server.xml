@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="bdd" path="/bdd" reloadable="true" source="org.eclipse.jst.jee.server:bdd"/><Context docBase="ProjectAppWeb" path="/ProjectAppWeb" reloadable="true" source="org.eclipse.jst.jee.server:ProjectAppWeb"/></Host>
+      <Context docBase="bdd" path="/bdd" reloadable="true" source="org.eclipse.jst.jee.server:bdd"/><Context docBase="AlarmeWS" path="/AlarmeWS" reloadable="true" source="org.eclipse.jst.jee.server:AlarmeWS"/><Context docBase="PorteWS" path="/PorteWS" reloadable="true" source="org.eclipse.jst.jee.server:PorteWS"/><Context docBase="FenetresWS" path="/FenetresWS" reloadable="true" source="org.eclipse.jst.jee.server:FenetresWS"/><Context docBase="LumieresWS" path="/LumieresWS" reloadable="true" source="org.eclipse.jst.jee.server:LumieresWS"/><Context docBase="AccesWS" path="/AccesWS" reloadable="true" source="org.eclipse.jst.jee.server:AccesWS"/><Context docBase="ChauffageWS" path="/ChauffageWS" reloadable="true" source="org.eclipse.jst.jee.server:ChauffageWS"/><Context docBase="ProjectAppWeb" path="/ProjectAppWeb" reloadable="true" source="org.eclipse.jst.jee.server:ProjectAppWeb"/></Host>
     </Engine>
   </Service>
 </Server>
