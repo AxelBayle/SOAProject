@@ -86,6 +86,7 @@
 					<form action="AjouterSalle" method="get">
 						<p>
 							<input type="submit" name="getBat" value="check Bat" />
+							<s:property value="respBody"/>
 						</p>
 					</form>
 			</div>
