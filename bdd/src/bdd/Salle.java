@@ -1,6 +1,9 @@
 package bdd;
 
-public class Salle {
+import java.io.Serializable;
+
+public class Salle implements Serializable{
+	private static final long serialVersionUID = 1L;
 	private int Etat_porte;
 	private int Etat_fenetre;
 	private int Etat_chauffage;

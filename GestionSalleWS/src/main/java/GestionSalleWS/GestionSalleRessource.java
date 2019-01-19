@@ -34,17 +34,25 @@ public class GestionSalleRessource {
 			 if (27>TOut&&TOut>20) {
 				reponse=client.target("http://localhost:8080/FenetresWS/webapi/fenetres/fenetre/").path(Integer.toString(id)).path("/1").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
 				reponse=client.target("http://localhost:8080/ChauffageWS/webapi/chauffages/chauffage/").path(Integer.toString(id)).path("/0").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/tout/").path(Integer.toString(TOut)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/salle/").path(Integer.toString(id)).path("/tin/").path(Integer.toString(TIn)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+
 				state ="2";
 
 			}
 			else if(TOut<20 && TIn<18){
 				reponse=client.target("http://localhost:8080/FenetresWS/webapi/fenetres/fenetre/").path(Integer.toString(id)).path("/0").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
 				reponse=client.target("http://localhost:8080/ChauffageWS/webapi/chauffages/chauffage/").path(Integer.toString(id)).path("/1").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/tout/").path(Integer.toString(TOut)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/salle/").path(Integer.toString(id)).path("/tin/").path(Integer.toString(TIn)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+
 				state ="3";
 			}
 			else {
 				reponse=client.target("http://localhost:8080/FenetresWS/webapi/fenetres/fenetre/").path(Integer.toString(id)).path("/0").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
 				reponse=client.target("http://localhost:8080/ChauffageWS/webapi/chauffages/chauffage/").path(Integer.toString(id)).path("/0").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/tout/").path(Integer.toString(TOut)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/salle/").path(Integer.toString(id)).path("/tin/").path(Integer.toString(TIn)).request().post(Entity.entity("", MediaType.APPLICATION_JSON));
 				state ="4";
 			}
 		}
