@@ -37,8 +37,6 @@ public class Salle {
 	}
 	public void setTemperature_in(int temperature_in) {
 		Temperature_in = temperature_in;
-	}
-
-	
+	}	
 	
 }
