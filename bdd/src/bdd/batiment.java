@@ -68,6 +68,12 @@ public class batiment implements Serializable {
 		lastID += 1;
 		map_salle.put(lastID, salle);
 	}
+	
+	/*
+	public void supSalle(int ID) {
+		lastID -= 1;
+		map_salle.remove(ID);
+	}*/
 
 	public int getNbSalles() {
 		return map_salle.size();

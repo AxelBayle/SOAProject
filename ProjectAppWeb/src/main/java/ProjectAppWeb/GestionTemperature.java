@@ -76,15 +76,15 @@ public class GestionTemperature extends HttpServlet {
 					}
 					else {
 						 if (state.equals("2")) {
-							request.setAttribute("temperatureBat","/!\\ T°-Out > T°-In, Chauffage eteint et fenetre ouverte dans la salle "+ id +" /!\\");
+							request.setAttribute("temperatureBat","/!\\ 27 > T°-Out > 20, Chauffage eteint et fenetre ouverte dans la salle "+ id +" /!\\");
 							request.getRequestDispatcher("index.jsp").forward(request, response);
 						}
 						else if( state.equals("3")){
-							request.setAttribute("temperatureBat","/!\\ T°-Out < T°-In, Chauffage allume et fenetre fermee dans la salle "+ id +" /!\\");
+							request.setAttribute("temperatureBat","/!\\ T°-Out < T°-In et T°-In < 18, Chauffage allume et fenetre fermee dans la salle "+ id +" /!\\");
 							request.getRequestDispatcher("index.jsp").forward(request, response);
 						}
 						else if(state.equals("4")){
-							request.setAttribute("temperatureBat","/!\\ T°-Out < T°-In, Chauffage eteint et fenetre fermee dans la salle "+ id +" /!\\");
+							request.setAttribute("temperatureBat","/!\\ Chauffage eteint et fenetre fermee dans la salle "+ id +" /!\\");
 							request.getRequestDispatcher("index.jsp").forward(request, response);
 						}
 					}

@@ -115,6 +115,16 @@ public class batimentRessource {
 		bat.addSalle(newSalle);
 		saveBat();
 	}
+	
+	/*
+	@POST
+	@Path("/supprimer/{idsalle}")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public void addSalle(@PathParam("idSalle") int id) {
+		Gson gson=new Gson();
+		bat.supSalle(id);
+		saveBat();
+	}*/
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)

@@ -11,6 +11,9 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
 /**
  * Servlet implementation class LoginVerify
  */
@@ -41,9 +44,19 @@ public class LoginVerify extends HttpServlet {
 		String name = request.getParameter("UserName");
 	    String pass = request.getParameter("pass");
 	    Client client =ClientBuilder.newClient();
+	    String firstlunch = "0";
 		if(name.equals("admin")&& pass.equals("WaTree")) {
 			
-			Response reponse=client.target("http://localhost:8080/bdd/webapi/bdd/chargerbat").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+			
+			Response reponse = client.target("http://localhost:8080/bdd/webapi/bdd/").request().get();
+			String bat = reponse.readEntity(String.class);
+			JsonObject jbat = new Gson().fromJson(bat, JsonObject.class);
+			System.out.println(jbat.get("lastID"));
+			System.out.println(firstlunch);
+			if(firstlunch.equals(jbat.get("lastID").toString())) {
+				reponse=client.target("http://localhost:8080/bdd/webapi/bdd/chargerbat").request().post(Entity.entity("", MediaType.APPLICATION_JSON));
+				System.out.println("chargement du batiment");
+			}
 			response.sendRedirect("index.jsp");
 		}
 		else {

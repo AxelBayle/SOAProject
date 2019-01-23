@@ -19,7 +19,7 @@ import com.google.gson.Gson;
 @Path ("chauffages")
 public class chauffageRessource {
 
-	// gestion une seule porte 
+	// gestion chauffage dans une salle
 		@POST
 		@Path("/chauffage/{id}/{etat}")
 		public void setChauffage(@PathParam("etat")int etat, @PathParam("id")int id) {
@@ -28,7 +28,7 @@ public class chauffageRessource {
 
 		}
 		
-		//gestion toutes les portes
+		//gestion chauffage de tout le batiment
 		@POST
 		@Path("/{etat}")
 		public void setChauffages(@PathParam("etat")int etat) {
